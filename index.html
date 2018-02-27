@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <title>Trivia Game</title>
+
+ <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+ </head>
+ <body>
+
+ <!-- Static Game Logo -->
+ <h1 id = "logo">Sailor Moon Trivia Game</h1>
+
+
+ <button id = startbutton> Start </button>
+ <h1 id = "timer_line">Time Remaining: <span id="countdowntimer"></span></h1>
+
+ <!-- Questions -->
+<div class = question>
+ <h1>How many Inner Senshi Sailor Scouts are there?</h1>
+ 
+ <input type="radio" name="q1" value="0">7 
+ <input type="radio" name="q1" value="1">6 <!--CORRECT -->
+ <input type="radio" name="q1" value="0">2 
+ <input type="radio" name="q1" value="0">5
+</div>
+
+<div class = question>
+ <h1>How many Outer Senshi Sailor Scouts are there?</h1>
+ 
+ <input type="radio" name="q2" value="0">7
+ <input type="radio" name="q2" value="0">13
+ <input type="radio" name="q2" value="0">9
+ <input type="radio" name="q2" value="1">4<!--CORRECT -->
+</div>
+
+ <div class = question>
+ <h1>Which Sailor Scount is known for destruction, death, and rebirths?</h1>
+ 
+ <input type="radio" name="q3" value="0">Sailor Pluto
+ <input type="radio" name="q3" value="0">Sailor Neptune
+ <input type="radio" name="q3" value="1">Sailor Saturn<!--CORRECT -->
+ <input type="radio" name="q3" value="0">Sailor Moon
+</div>
+
+ <div class = question>
+ <h1>Who is Sailor Moon's daughter?</h1>
+ 
+ <input type="radio" name="q4" value="1">Chibi Moon <!--CORRECT -->
+ <input type="radio" name="q4" value="0">Mistress 9
+ <input type="radio" name="q4" value="0">Hotaru Tomoe
+ <input type="radio" name="q4" value="0">Queen Beryl
+</div>
+
+ <div class = question>
+ <h1>What is Sailor Moon's cat's name?</h1>
+ 
+ <input type="radio" name="q5" value="0">Artemis 
+ <input type="radio" name="q5" value="0">Mohammad
+ <input type="radio" name="q5" value="1">Luna<!--CORRECT -->
+ <input type="radio" name="q5" value="0">Shanti
+</div>
+
+<button id = donebutton> Submit </button>
+
+<div id = results>
+    <p>Correct Answers: <span id="correctAnswers"></span></p>
+    <p>Wrong Answers: <span id="wrongAnswers"></span></p>
+</div>
+
+ </div>
+ <!-- Query -->
+ <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+ <!-- JavaScript -->
+ <script src="assets/javascript/app.js"></script>
+ 
+</body>
+</html>
